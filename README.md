@@ -4,6 +4,8 @@
   <br>
 </p>
 
+![Build and Test](https://github.com/peacemakr-io/peacemakr-java-tools/workflows/Build%20and%20Test/badge.svg?branch=master)
+
 # Peacemakr Java Tools
 
 These tools simplify integration with Peacemakr's Secure Data Platform, specifically the [Java SDK](https://github.com/peacemakr-io/peacemakr-java-sdk)

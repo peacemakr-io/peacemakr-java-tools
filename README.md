@@ -6,7 +6,7 @@
 
 # Peacemakr Java Tools
 
-These tools simplify integration with Peacemakr's Secure Data Platform.
+These tools simplify integration with Peacemakr's Secure Data Platform, specifically the [Java SDK](https://github.com/peacemakr-io/peacemakr-java-sdk)
 
 ## Quick Start
 
@@ -60,13 +60,11 @@ To see a more concrete example, please check out the tests.
 
 ## Contributions
 
-Peacemakr welcomes open and active contributions to this SDK. As long as they're in the spirit of project, we will most 
+Peacemakr welcomes open and active contributions to this toolkit. As long as they're in the spirit of project, we will most 
 likely accept them. However, you may want to get our opinion on proposed changes before investing time, so we can work 
-together to solve problems you encounter that make sense for the future direction we have planned.
+together to solve problems you encounter in a way that makes sense for the future direction we have planned.
 
 ## Testing
 
-We use the usual fork and PR mechanisms, and in this section, here are some basic guidelines on how to setup a 
-development environment. Without being a member of peacemakr, you will not have full access to the testing infrastructure 
-required for complete code coverage, but our CircleCI build and test pipeline can be used to provide this level of 
-visibility and provide feedback.
+Without being a member of Peacemakr, you will not have full access to the testing infrastructure required for complete 
+code coverage, but our CI build and test pipeline can be used to provide this level of visibility and feedback.

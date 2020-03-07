@@ -70,3 +70,36 @@ together to solve problems you encounter in a way that makes sense for the futur
 
 Without being a member of Peacemakr, you will not have full access to the testing infrastructure required for complete 
 code coverage, but our CI build and test pipeline can be used to provide this level of visibility and feedback.
+
+## Releasing
+Prerequisites:
+- Maven to be configured with Java8
+- Peacemakr GPG key
+
+OSSRH:
+- add the following to `~/.m2/settings.xml`; replace `user_id` and `pass` with proper values.
+```aidl
+<settings>
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>user_id</username>
+      <password>pass</password>
+    </server>
+  </servers>
+</settings>
+```
+- release `mvn clean deploy -P ossrh`
+
+Local repo:
+- release `mvn clean install -P ossrh`
+
+If the following exception occurs during the release:
+```aidl
+[INFO] --- maven-gpg-plugin:1.5:sign (sign-artifacts) @ crypto.tools ---
+gpg: signing failed: Inappropriate ioctl for device
+```
+The following is the fix:
+```aidl
+export GPG_TTY=$(tty) 
+```
